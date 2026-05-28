@@ -12,10 +12,10 @@ This project is designed to demonstrate SQL skills and techniques typically used
 2. Data Cleaning: Identify and remove any records with missing or null values.
 3. Exploratory Data Analysis (EDA): Perform basic exploratory data analysis to understand the dataset.
 4. Business Analysis: Use SQL to answer specific business questions and derive insights from the sales data.
-5. 
+
 ## Project Structure
 
-1. Database Setup
+###1. Database Setup###
 a. **Database Creation:** The project starts by creating a database named sql_proj_26.
 b. **Table Creation:** A table named retail_sales is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
@@ -34,17 +34,19 @@ CREATE TABLE retail_sales
     price_per_unit FLOAT,	
     cogs FLOAT,
     total_sale FLOAT
-);'''
+);
+'''
 
-2. Data Exploration & Cleaning
-Record Count: Determine the total number of records in the dataset.
-Customer Count: Find out how many unique customers are in the dataset.
-Category Count: Identify all unique product categories in the dataset.
-Null Value Check: Check for any null values in the dataset and delete records with missing data.
+## 2. Data Exploration & Cleaning
+**Record Count:** Determine the total number of records in the dataset.
+**Customer Count:** Find out how many unique customers are in the dataset.
+**Category Count:** Identify all unique product categories in the dataset.
+**Null Value Check:** Check for any null values in the dataset and delete records with missing data.
 
-SELECT COUNT(*) FROM retail_sales;
+'''SELECT COUNT(*) FROM retail_sales;
 SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
 SELECT DISTINCT category FROM retail_sales;
+'''
 
 SELECT * FROM retail_sales
 WHERE 
