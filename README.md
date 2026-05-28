@@ -16,10 +16,10 @@ This project is designed to demonstrate SQL skills and techniques typically used
 ## Project Structure
 
 1. Database Setup
-a. Database Creation: The project starts by creating a database named sql_proj_26.
-b. Table Creation: A table named retail_sales is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
+a. **Database Creation:** The project starts by creating a database named sql_proj_26.
+b. **Table Creation:** A table named retail_sales is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
-** CREATE DATABASE sql_proj_26;
+'''CREATE DATABASE sql_proj_26;
 
 CREATE TABLE retail_sales
 (
@@ -34,7 +34,7 @@ CREATE TABLE retail_sales
     price_per_unit FLOAT,	
     cogs FLOAT,
     total_sale FLOAT
-); **
+);'''
 
 2. Data Exploration & Cleaning
 Record Count: Determine the total number of records in the dataset.
